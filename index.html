@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Personal Portfolio</title>
+  <meta name="description" content="Portfólio pessoal de Gustavo Brandassi, estudante de Ciência da Computação." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <div class="container nav-bar">
+        <a class="brand" href="#hero">GB<span>.</span></a>
+
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Abrir menu</span>
+          <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="pill">
+              <span class="pulse-dot"></span>
+              Disponível para novas oportunidades
+            </div>
+            <h1>Olá, eu sou <br><span>Gustavo Brandassi</span></h1>
+            <h2>Estudante de Ciência da Computação <br class="hide-sm"> </h2>
+            <p>Transformo problemas complexos em soluções elegantes. Focado em criar aplicações web performáticas, escaláveis e com uma experiência de usuário excepcional.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projetos">Ver projetos <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12M13 5l7 7-7 7"/></svg></a>
+              <a class="btn btn-secondary" href="#contato">Entrar em contato <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 7l8 6 8-6"/><path d="M4 7l8 6 8-6"/><path d="M4 17l5-4"/><path d="M20 17l-5-4"/></svg></a>
+            </div>
+          </div>
+          <div class="hero-visual reveal reveal-delay-1">
+            <div class="portrait-ring">
+              <div class="portrait-wrap">
+                <img src="curriculo.png" alt="Gustavo Brandassi" />
+              </div>
+              <div class="spin-ring"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg" id="sobre">
+        <div class="container">
+          <div class="section-intro center reveal">
+            <h2>Sobre <span>mim</span></h2>
+            <p>Sou estudante de Ciência da Computação apaixonado por criar arquiteturas eficientes e código de qualidade. Combino minha base teórica acadêmica com experiência prática em desenvolvimento web para construir aplicações robustas e orientadas ao usuário.</p>
+          </div>
+          <div class="card-grid three-up">
+            <article class="info-card reveal">
+              <div class="card-icon emerald">🎓</div>
+              <h3>Formação</h3>
+              <p>Graduando em Ciência da Computação, com foco forte em algoritmos, estrutura de dados e engenharia de software.</p>
+            </article>
+            <article class="info-card reveal reveal-delay-1">
+              <div class="card-icon teal">💻</div>
+              <h3>Desenvolvimento</h3>
+              <p>Experiência no desenvolvimento full-stack, conectando interfaces ricas no front-end a APIs sólidas e escaláveis no back-end.</p>
+            </article>
+            <article class="info-card reveal reveal-delay-2">
+              <div class="card-icon blue">⚙️</div>
+              <h3>Solução de Problemas</h3>
+              <p>Abordagem analítica e curiosa. Adoro desmontar desafios complexos e convertê-los em sistemas lógicos, documentados e fáceis de manter.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="habilidades">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <h2>Minhas <span>Habilidades</span></h2>
+              <p>Tecnologias e ferramentas que domino para construir produtos digitais de ponta a ponta.</p>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-title"><span class="skill-badge green">◫</span><h3>Front-end</h3></div>
+              <div class="tags">
+                <span>React.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Next.js</span><span>Figma</span><span>Redux</span>
+              </div>
+            </article>
+            <article class="skill-card reveal reveal-delay-1">
+              <div class="skill-title"><span class="skill-badge blue">◫</span><h3>Back-end</h3></div>
+              <div class="tags">
+                <span>Node.js</span><span>Express</span><span>Python</span><span>Java</span><span>RESTful APIs</span><span>GraphQL</span>
+              </div>
+            </article>
+            <article class="skill-card reveal reveal-delay-2">
+              <div class="skill-title"><span class="skill-badge purple">◫</span><h3>Banco de Dados</h3></div>
+              <div class="tags">
+                <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>Redis</span><span>Prisma ORM</span>
+              </div>
+            </article>
+            <article class="skill-card reveal reveal-delay-3">
+              <div class="skill-title"><span class="skill-badge amber">◫</span><h3>Ferramentas</h3></div>
+              <div class="tags">
+                <span>Git / GitHub</span><span>Docker</span><span>AWS</span><span>Linux</span><span>Jest</span><span>CI/CD</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg" id="projetos">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <h2>Projetos em <span>destaque</span></h2>
+              <p>Uma seleção do meu trabalho mais recente, unindo estética, funcionalidade e código limpo para resolver problemas reais.</p>
+            </div>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="tcc.png" alt="protótipo de dessalinizador solar" />
+              </div>
+              <div class="project-body">
+                <h3>Dessalinizador Solar (TCC)</h3>
+                <p>protótipo de dessalinizador de água salobra movido a energia solar, utilizando osmose reversa e automação com Arduino. O sistema conta com bombas de alta pressão, membranas semipermeáveis e sensores que monitoram pressão, fluxo e qualidade da água. A energia é fornecida por painéis solares, tornando o sistema autônomo e sustentável. O protótipo mostrou-se viável para uso em regiões com escassez de água e infraestrutura limitada.</p>
+                <div class="tags project-tags"><span>Arduino</span><span>C</span><span>Bluetooth</span><span>Sensores</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Brandassi/tcc/tree/main" target="_blank" rel="noreferrer">Código</a>
+                  <a class="demo" href="https://example.com" target="_blank" rel="noreferrer">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img src="site.png" alt="Site Aquanova (TCC)" />
+              </div>
+              <div class="project-body">
+                <h3>Site Aquanova (TCC)</h3>
+                <p>Junto com meu grupo criamos um site para apresentar nosso projeto e suas funcionalidades com instruções de uso, documentação e vídeos explicativos, contendo também um jogo que foi desenvolvido junto com o tcc.</p>
+                <div class="tags project-tags"><span>React</span><span>Tailwind CSS</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Brandassi/aquanova-site" target="_blank" rel="noreferrer">Código</a>
+                  <a class="demo" href="https://aquanova-site.vercel.app" target="_blank" rel="noreferrer">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal reveal-delay-1">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1598520106798-b5dfe0af5026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzaG9wcGluZyUyMGNvZGUlMjBzY3JlZW58ZW58MXx8fHwxNzc2MTE4ODY5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="E-commerce Mobile App" />
+              </div>
+              <div class="project-body">
+                <h3>E-commerce Mobile App</h3>
+                <p>Aplicativo nativo para uma loja virtual focada em vestuário sustentável. Inclui carrinho de compras dinâmico, checkout com Stripe e acompanhamento de entregas.</p>
+                <div class="tags project-tags"><span>React Native</span><span>Express</span><span>MongoDB</span><span>Redux</span></div>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Código</a>
+                  <a class="demo" href="https://example.com" target="_blank" rel="noreferrer">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal reveal-delay-2">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1634084462412-b54873c0a56d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbGFuZGluZyUyMHBhZ2UlMjB3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzc2MTE4ODY0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Landing Page FinTech" />
+              </div>
+              <div class="project-body">
+                <h3>Landing Page FinTech</h3>
+                <p>Website moderno e de alta conversão para uma startup do setor financeiro. Desenvolvido com foco extremo em performance de carregamento e acessibilidade (a11y).</p>
+                <div class="tags project-tags"><span>Next.js</span><span>TypeScript</span><span>Framer Motion</span><span>Tailwind CSS</span></div>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Código</a>
+                  <a class="demo" href="https://example.com" target="_blank" rel="noreferrer">Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <div class="container narrow">
+          <div class="section-intro center reveal">
+            <h2>Trajetória <span>&</span> Formação</h2>
+            <p>Um resumo da minha jornada acadêmica e experiência profissional no mundo do desenvolvimento.</p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-line"></div>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot">💼</div>
+              <div class="timeline-card">
+                <span class="date">Jan 2023 - Presente</span>
+                <h3>Desenvolvedor Full-stack Júnior</h3>
+                <span class="company">Tech Solutions Inc.</span>
+                <p>Desenvolvimento e manutenção de APIs com Node.js e interfaces em React. Refatoração de código legado que resultou em 30% de melhoria de performance no carregamento inicial da aplicação principal.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal reveal-delay-1 reverse">
+              <div class="timeline-dot">🎓</div>
+              <div class="timeline-card">
+                <span class="date">2021 - 2025 (Previsto)</span>
+                <h3>Bacharelado em Ciência da Computação</h3>
+                <span class="company">Universidade Federal</span>
+                <p>Membro ativo do centro de pesquisa em engenharia de software e bolsista do laboratório de redes neurais. Projetos acadêmicos em C, Java e Python com foco em desempenho computacional.</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal reveal-delay-2">
+              <div class="timeline-dot">💼</div>
+              <div class="timeline-card">
+                <span class="date">Jun 2022 - Dez 2022</span>
+                <h3>Estágio em Desenvolvimento Front-end</h3>
+                <span class="company">Agência Digital Cria</span>
+                <p>Criação de landing pages altamente responsivas para clientes diversos. Otimização de SEO e métricas Core Web Vitals, subindo a pontuação média do Lighthouse de 60 para 95.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg" id="contato">
+        <div class="container">
+          <div class="section-header reveal contact-header">
+            <div>
+              <h2>Vamos <span>conversar?</span></h2>
+              <p>Estou sempre aberto a novas oportunidades, colaborações em projetos open-source e boas conversas sobre tecnologia.</p>
+            </div>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-form-card reveal">
+              <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div class="two-col">
+                  <div class="field">
+                    <label for="name">Nome</label>
+                    <input id="name" name="name" type="text" placeholder="João Silva" required />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="joao@exemplo.com" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="message">Mensagem</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Olá Gustavo, gostaria de falar sobre..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button class="btn btn-primary submit-btn" type="submit">
+                  Enviar mensagem
+                  <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="contact-aside reveal reveal-delay-1">
+              <div class="direct-info">
+                <h3>Informações Diretas</h3>
+                <a class="social-row" href="https://github.com/gustavobrandassi" target="_blank" rel="noreferrer">
+                  <span class="social-icon">⌘</span>
+                  <span><small>GitHub</small><strong>@gustavobrandassi</strong></span>
+                </a>
+                <a class="social-row" href="https://linkedin.com/in/gustavobrandassi" target="_blank" rel="noreferrer">
+                  <span class="social-icon">in</span>
+                  <span><small>LinkedIn</small><strong>in/gustavobrandassi</strong></span>
+                </a>
+                <a class="social-row" href="mailto:gustavobrandassi@example.com">
+                  <span class="social-icon">@</span>
+                  <span><small>E-mail</small><strong>gustavobrandassi@example.com</strong></span>
+                </a>
+              </div>
+              <div class="location-card">
+                <div class="location-icon">⌖</div>
+                <div>
+                  <h4>Localização</h4>
+                  <p>São Paulo, SP - Brasil<br>Disponível para trabalho remoto e presencial dependendo da oportunidade.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Gustavo Brandassi. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="#hero">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
