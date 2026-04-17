@@ -15,6 +15,12 @@ const setMenuOpen = (open) => {
   mobileMenu.classList.toggle('open', open);
 };
 
+const updateHeader = () => {
+  if (header) {
+    header.classList.toggle('scrolled', window.scrollY > 24);
+  }
+};
+
 if (menuToggle && mobileMenu) {
   menuToggle.addEventListener('click', () => {
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -27,17 +33,16 @@ if (menuToggle && mobileMenu) {
 
   document.addEventListener('click', (event) => {
     const target = event.target;
-    if (target instanceof Node && !menuToggle.contains(target) && !mobileMenu.contains(target)) {
+    if (!(target instanceof Node)) return;
+
+    if (!menuToggle.contains(target) && !mobileMenu.contains(target)) {
       setMenuOpen(false);
     }
   });
-
-  window.addEventListener('scroll', () => {
-    if (header) header.classList.toggle('scrolled', window.scrollY > 24);
-  });
-
-  if (header) header.classList.toggle('scrolled', window.scrollY > 24);
 }
+
+window.addEventListener('scroll', updateHeader, { passive: true });
+updateHeader();
 
 const revealItems = document.querySelectorAll('.reveal');
 
